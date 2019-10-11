@@ -1,9 +1,30 @@
-body{
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    background-image:url('/images/bg.jpeg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+canvas {
+    position: absolute;
+}
+
+#video {
+    border-top-right-radius: 35%;
+    border-bottom-left-radius: 35%;
+}
+
+@media (max-width: 980px) {
+    * {
+        visibility: hidden;
+    }
+    body {
+        background: none;
+    }
+
 }
